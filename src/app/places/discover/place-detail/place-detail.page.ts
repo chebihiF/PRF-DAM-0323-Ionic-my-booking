@@ -18,7 +18,8 @@ export class PlaceDetailPage implements OnInit {
   onBookPlace() {
     // procesing
     //this.router.navigateByUrl('/places/tabs/discover')
-    this.navCtr.navigateBack('/places/tabs/discover');
+    //this.navCtr.navigateBack('/places/tabs/discover');
+    this.navCtr.pop();
   }
 
 }

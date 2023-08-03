@@ -5,5 +5,24 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center">
+        <ion-list>
+          <ion-item
+            *ngFor="let place of offers"
+            [routerLink] = "[place.id]"
+            >
+            <ion-thumbnail slot="start">
+              <ion-img [src]="place.imageUrl"></ion-img>
+            </ion-thumbnail>
+            <ion-label>
+              <h2> {{ place.title }}</h2>
+              <p> {{ place.description }} </p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
