@@ -14,6 +14,7 @@ export class AuthService {
   constructor() { }
 
   logIn(){
+    // auth ==> serveur TOKEN ...
     this._userIsAuthenticated = true ;
   }
 
